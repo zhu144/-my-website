@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网页</title>
+    <style>
+        /* 直接在 HTML 中写 CSS 样式（也可单独保存为 .css 文件） */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎访问我的网页！</h1>
+        <p>无需安装任何软件，直接打开浏览器即可查看。</p>
+        <button class="button" onclick="showMessage()">点击试试</button>
+        <p id="message"></p>
+    </div>
+
+    <!-- 直接在 HTML 中写 JavaScript（也可单独保存为 .js 文件） -->
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent = "Hello, World!";
+        }
+    </script>
+</body>
+</html>
